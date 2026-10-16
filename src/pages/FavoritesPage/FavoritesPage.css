@@ -1,0 +1,45 @@
+.favorites-header {
+  padding: 32px 0 16px;
+}
+
+.favorites-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.favorites-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 4px 0 0;
+}
+
+.favorites-empty {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.favorites-empty h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.favorites-empty p {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.favorites-empty__link {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.favorites-empty__link:hover {
+  background-color: #333;
+}

@@ -1,0 +1,49 @@
+.quantity {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.quantity__btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  color: #111;
+  transition: background-color 0.2s;
+}
+
+.quantity__btn:hover:not(:disabled) {
+  background-color: #f3f4f6;
+}
+
+.quantity__btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.quantity__value {
+  min-width: 32px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+}
+
+.app--dark .quantity {
+  border-color: #333;
+}
+
+.app--dark .quantity__btn,
+.app--dark .quantity__value {
+  color: #fff;
+}
+
+.app--dark .quantity__btn:hover:not(:disabled) {
+  background-color: #222;
+}

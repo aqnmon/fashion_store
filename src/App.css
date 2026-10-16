@@ -1,0 +1,164 @@
+.app {
+  background-color: #fff;
+  color: #111;
+  
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app--dark {
+  background-color: #111;
+  color: #fff;
+}
+
+.app--dark .header {
+  border-bottom-color: #333;
+}
+
+.app--dark .nav__link {
+  color: #fff;
+}
+
+.app--dark .nav__link:hover {
+  color: #9ca3af;
+}
+
+.app--dark .header__theme-btn {
+  border-color: #444;
+  color: #fff;
+}
+
+.app--dark .header__theme-btn:hover {
+  background-color: #222;
+}
+
+.app--dark .card,
+.app--dark .stat-card,
+.app--dark .comment-card {
+  background-color: #1a1a1a;
+  border-color: #333;
+  color: #fff;
+}
+
+
+.app--dark .comment-card__role {
+  color: #9ca3af;
+}
+
+.app--dark .comment-card__date {
+  color: #6b7280;
+}
+
+.app--dark .comment-card__text {
+  color: #d1d5db;
+}
+
+.app--dark .footer {
+  background-color: #1a1a1a;
+}
+
+.app--dark .section-header__subtitle,
+.app--dark .card__description,
+.app--dark .user-profile__role {
+  color: #9ca3af;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer__contacts {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .header__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 56px 16px;
+    margin: 24px 0;
+    border-radius: 16px;
+  }
+
+  .hero__heading {
+    font-size: 28px;
+  }
+
+  .hero__subheading {
+    font-size: 16px;
+  }
+
+  .card__image {
+    height: 220px;
+  }
+}
+
+.catalog-loading {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 0;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.app--dark .catalog-loading {
+  color: #9ca3af;
+}
+
+.app--dark .modal__content {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.app--dark .modal__close {
+  color: #9ca3af;
+}
+
+.app--dark .modal__close:hover {
+  color: #fff;
+}
+.reviews-login-hint {
+  text-align: center;
+  padding: 24px;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  color: #6b7280;
+  margin: 24px 0;
+}
+
+.app--dark .reviews-login-hint {
+  background-color: #1a1a1a;
+  color: #9ca3af;
+}

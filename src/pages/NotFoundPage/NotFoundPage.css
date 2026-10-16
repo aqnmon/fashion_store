@@ -1,0 +1,47 @@
+.not-found {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.not-found__code {
+  font-size: 120px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+  background: linear-gradient(to right, #ec4899, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.not-found__title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 16px 0 8px;
+}
+
+.not-found__text {
+  color: #6b7280;
+  margin: 0 0 24px;
+  font-size: 16px;
+}
+
+.not-found__link {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.not-found__link:hover {
+  background-color: #333;
+}
+
+.app--dark .not-found__text {
+  color: #9ca3af;
+}

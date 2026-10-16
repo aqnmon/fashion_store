@@ -1,0 +1,22 @@
+.section-header {
+  margin-bottom: 24px;
+}
+
+.section-header--left {
+  text-align: left;
+}
+
+.section-header--center {
+  text-align: center;
+}
+
+.section-header__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section-header__subtitle {
+  color: #6b7280;
+  margin: 4px 0 0;
+}

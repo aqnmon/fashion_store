@@ -1,0 +1,19 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.rating__stars--filled {
+  color: #eab308;
+}
+
+.rating__stars--empty {
+  color: #d1d5db;
+}
+
+.rating__count {
+  color: #6b7280;
+  margin-left: 4px;
+}

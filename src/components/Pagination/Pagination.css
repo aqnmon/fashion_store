@@ -1,0 +1,45 @@
+.pagination {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.pagination__btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  background-color: #fff;
+  color: #111;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.pagination__btn:hover {
+  background-color: #f3f4f6;
+}
+
+.pagination__btn--active {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.app--dark .pagination__btn {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-color: #333;
+}
+
+.app--dark .pagination__btn:hover {
+  background-color: #222;
+}
+
+.app--dark .pagination__btn--active {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}

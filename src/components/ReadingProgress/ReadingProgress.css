@@ -1,0 +1,19 @@
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+  z-index: 200;
+}
+
+.reading-progress__bar {
+  height: 100%;
+  background: linear-gradient(to right, #ec4899, #a855f7);
+  transition: width 0.1s ease-out;
+}
+
+.app--dark .reading-progress {
+  background-color: rgba(255, 255, 255, 0.1);
+}

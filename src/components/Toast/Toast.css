@@ -1,0 +1,42 @@
+
+.toast {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background-color: #111;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+.toast__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #16a34a;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.app--dark .toast {
+  background-color: #f3f4f6;
+  color: #111;
+}
+
+@keyframes toast-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

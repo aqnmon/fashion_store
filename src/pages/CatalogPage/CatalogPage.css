@@ -1,0 +1,35 @@
+
+.page-catalog {
+  padding-top: 40px;
+  padding-bottom: 64px;
+}
+
+.catalog-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+
+.catalog-controls .search-bar {
+  flex: 0 0 260px;
+  min-width: 260px;
+}
+.catalog-controls .sort-dropdown {
+  flex: 0 0 auto;
+  max-width: 220px;
+}
+.catalog-loading,
+.catalog-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 0;
+  color: #6b7280;
+}
+
+.app--dark .catalog-loading,
+.app--dark .catalog-empty {
+  color: #9ca3af;
+}

@@ -12,7 +12,7 @@ import { initialProducts } from "../../data/products";
 import { useFavorites } from "../../context/FavoritesContext";
 import "./CatalogPage.css";
 
-const categories = ["All", "Dress", "Jacket", "Jeans", "Accessories"];
+const categories = ["Всё", "Платье", "Жакет", "Джинсы", "Аксессуары"];
 const ITEMS_PER_PAGE = 3;
 
 function sortProducts(list, sortBy) {

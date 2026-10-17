@@ -49,7 +49,7 @@ export const initialProducts = [
     description: "Теплое шерстяное пальто",
     imageUrl: "/coat.jpeg",
     price: 60000,
-    type: "Верхняя одежда",
+    type: "Куртка",
     category: "Хит продаж",
     rating: 5,
     reviewsCount: 30,

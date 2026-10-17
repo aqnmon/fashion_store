@@ -12,7 +12,7 @@ import { initialProducts } from "../../data/products";
 import { useFavorites } from "../../context/FavoritesContext";
 import "./CatalogPage.css";
 
-const categories = ["Всё", "Платье", "Жакет", "Джинсы", "Аксессуары"];
+const categories = ["Все", "Платье", "Куртка", "Джинсы", "Аксессуары"];
 const ITEMS_PER_PAGE = 3;
 
 function sortProducts(list, sortBy) {
@@ -41,24 +41,23 @@ function CatalogPage() {
   const [isToastVisible, setIsToastVisible] = useState(false);
 
   const { favorites, toggleFavorite } = useFavorites();
+const updateParams = (updates) => {
+  const params = Object.fromEntries(searchParams.entries());
+  const newParams = { ...params, ...updates };
 
-  const updateParams = (updates) => {
-    const params = Object.fromEntries(searchParams.entries());
-    const newParams = { ...params, ...updates };
+  Object.keys(newParams).forEach((key) => {
+    if (
+      newParams[key] === "" ||
+      newParams[key] === "Все" ||
+      (key === "sort" && newParams[key] === "price-asc") ||
+      (key === "page" && String(newParams[key]) === "1") // ← ИСПРАВЛЕНО
+    ) {
+      delete newParams[key];
+    }
+  });
 
-    Object.keys(newParams).forEach((key) => {
-      if (
-        newParams[key] === "" ||
-        newParams[key] === "All" ||
-        (key === "sort" && newParams[key] === "price-asc") ||
-        (key === "page" && newParams[key] === "1")
-      ) {
-        delete newParams[key];
-      }
-    });
-
-    setSearchParams(newParams);
-  };
+  setSearchParams(newParams);
+};
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -184,7 +183,7 @@ function CatalogPage() {
                       : "Добавлено в избранное"
                   );
                 }}
-                onAddedToCart={(title) => showToast(`Added: ${title}`)}
+               onAddedToCart={(title) => showToast(`Добавлено: ${title}`)}
               />
             ))
           )}

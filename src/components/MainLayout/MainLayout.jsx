@@ -19,7 +19,7 @@ const socialLinks = [
 
 function MainLayout() {
   const windowWidth = useWindowWidth();
-  const isMobile = windowWidth < 768;
+  const isMobile = windowWidth < 1024;
   const { totalCount } = useCart();
   const {  logout } = useAuth();
   const { favoritesCount } = useFavorites();

@@ -3,12 +3,11 @@ import Container from "../../components/Container/Container";
 import Card from "../../components/Card/Card";
 import { initialProducts } from "../../data/products";
 import { useFavorites } from "../../context/FavoritesContext";
-import { useCart } from "../../context/CartContext";
 import "./FavoritesPage.css";
 
 function FavoritesPage() {
   const { favorites, toggleFavorite } = useFavorites();
-  const { addToCart } = useCart();
+  
   const favoriteProducts = initialProducts.filter((product) =>
     favorites.includes(product.id)
   );
@@ -51,7 +50,7 @@ function FavoritesPage() {
     reviewsCount={product.reviewsCount}
     isFavorite={true}
     onToggleFavorite={() => toggleFavorite(product.id)}
-    onAddedToCart={() => addToCart(product)}
+    onAddedToCart={() => {}}
   />
 ))}
       </div>

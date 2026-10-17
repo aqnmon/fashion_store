@@ -50,7 +50,7 @@ const updateParams = (updates) => {
       newParams[key] === "" ||
       newParams[key] === "Все" ||
       (key === "sort" && newParams[key] === "price-asc") ||
-      (key === "page" && String(newParams[key]) === "1") // ← ИСПРАВЛЕНО
+      (key === "page" && String(newParams[key]) === "1")
     ) {
       delete newParams[key];
     }

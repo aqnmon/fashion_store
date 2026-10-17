@@ -6,18 +6,24 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [isInitialized, setIsInitialized] = useState(false);
 
-  useEffect(() => {
-    const savedUser = localStorage.getItem("user");
 
-    const timer = setTimeout(() => {
+useEffect(() => {
+  const timer = setTimeout(() => {
+    try {
+      const savedUser = localStorage.getItem("user");
       if (savedUser) {
         setUser(JSON.parse(savedUser));
       }
+    } catch (error) {
+      console.error("Failed to restore user:", error);
+      localStorage.removeItem("user");
+    } finally {
       setIsInitialized(true);
-    }, 300);
+    }
+  }, 300);
 
-    return () => clearTimeout(timer);
-  }, []);
+  return () => clearTimeout(timer);
+}, []);
 
   
   useEffect(() => {

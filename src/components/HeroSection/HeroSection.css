@@ -4,7 +4,7 @@
   margin: 32px 0;
   overflow: hidden;
   min-height: 420px;
-  background-image: url("/public/catalog.jpeg");
+  background-image: url("/catalog.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;

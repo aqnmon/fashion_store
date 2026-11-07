@@ -1,0 +1,161 @@
+.register-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background-color: #fff;
+  color: #111; 
+}
+
+.app--dark .register-container {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-color: #333;
+}
+
+.app--dark .register-container input,
+.app--dark .register-container select,
+.app--dark .register-container textarea {
+  background-color: #222;
+  color: #fff;
+  border-color: #444;
+}
+
+.register-container h1 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #111;
+  background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #111;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.radio-group label,
+.checkbox-group label {
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.error {
+  color: #ef4444;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.btn-submit,
+.btn-reset {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.btn-submit:hover,
+.btn-reset:hover {
+  opacity: 0.8;
+}
+
+.btn-submit {
+  background-color: #111;
+  color: #fff;
+}
+
+.btn-reset {
+  background-color: #e5e7eb;
+  color: #111;
+}
+
+.app--dark .btn-submit {
+  background-color: #fff;
+  color: #000;
+}
+
+.app--dark .btn-reset {
+  background-color: #333;
+  color: #fff;
+}
+
+
+.success-block {
+  padding: 24px;
+  background-color: #ecfdf5;
+  border: 1px solid #10b981;
+  border-radius: 12px;
+  color: #065f46;
+  margin-bottom: 24px;
+}
+
+.app--dark .success-block {
+  background-color: #064e3b;
+  color: #d1fae5;
+  border-color: #059669;
+}
+
+.success-block h2 {
+  margin-top: 0;
+}
+
+.success-block .btn-reset {
+  margin-top: 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+.app--dark .success-block .btn-reset {
+  background-color: #fff;
+  color: #000;
+}

@@ -1,0 +1,16 @@
+.adv-page { max-width: 800px; margin: 40px auto; padding: 20px; }
+.adv-toggle-btn { padding: 12px 24px; background: #111; color: #fff; border: none; border-radius: 8px; cursor: pointer; margin-bottom: 20px; width: 100%; font-size: 16px; }
+.adv-box { padding: 20px; border-radius: 12px; margin-bottom: 20px; }
+.adv-box--bad { border: 2px solid #ef4444; background: #fef2f2; color: #991b1b; }
+.adv-box--good { border: 2px solid #10b981; background: #ecfdf5; color: #065f46; }
+.adv-controls { display: flex; gap: 10px; margin-bottom: 16px; }
+.adv-controls input { flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 6px; }
+.adv-controls button { padding: 8px 16px; background: #111; color: #fff; border: none; border-radius: 6px; cursor: pointer; }
+.adv-list { display: flex; flex-direction: column; gap: 8px; }
+.adv-item { display: flex; justify-content: space-between; align-items: center; padding: 10px; background: #fff; color: #111; border-radius: 6px; }
+.adv-item button { background: #111; color: #fff; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; }
+.adv-explanation { padding: 20px; background: #f3f4f6; border-radius: 12px; font-size: 14px; line-height: 1.5; }
+.app--dark .adv-explanation { background: #1a1a1a; color: #fff; }
+.app--dark .adv-item { background: #222; color: #fff; }
+.app--dark .adv-box--bad { background: #450a0a; color: #fca5a5; }
+.app--dark .adv-box--good { background: #064e3b; color: #a7f3d0; }

@@ -18,6 +18,9 @@ import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import RegisterForm from "./pages/RegisterPage/RegisterForm";
 import OptimizationPage from "./pages/OptimizationPage/OptimizationPage";
 import AdvancedOptimizationPage from "./pages/OptimizationPage/AdvancedOptimizationPage";
+import UsersPage from "./pages/UsersPage/UsersPage";
+import UserDetailPage from "./pages/UsersPage/UserDetailPage";
+UserDetailPage
 function App() {
   const { theme } = useTheme();
 
@@ -35,7 +38,8 @@ function App() {
     <Route path="/register" element={<RegisterForm />} />
 <Route path="/optimization" element={<OptimizationPage />} />
 <Route path="/optimization-advanced" element={<AdvancedOptimizationPage />} />
-
+<Route path="/users" element={<UsersPage />} />
+<Route path="/users/:id" element={<UserDetailPage />} />
     <Route
       path="/checkout"
       element={

@@ -1,0 +1,113 @@
+.users-page { padding: 40px 0; }
+.users-header { margin-bottom: 24px; }
+.users-header h1 { margin: 0 0 8px; }
+.users-header p { color: #6b7280; margin: 0; }
+
+.users-controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.users-search-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+}
+
+.users-input, .users-select {
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.users-input { padding-right: 40px; }
+.users-clear {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #9ca3af;
+}
+
+.users-btn {
+  padding: 10px 16px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+}
+.users-btn:hover { background-color: #333; }
+.users-btn--back { margin-bottom: 20px; background-color: #f3f4f6; color: #111; }
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.user-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-card h3 { margin: 0 0 4px; }
+.user-card__username { color: #6b7280; margin: 0 0 16px; font-size: 14px; }
+.user-card__info p { margin: 4px 0; font-size: 14px; }
+
+.user-card__link {
+  margin-top: auto;
+  padding-top: 16px;
+  color: #ec4899;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.users-message {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6b7280;
+  font-size: 18px;
+}
+.users-message--error { color: #ef4444; }
+
+/* Детальная страница */
+.user-detail {
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px;
+}
+.user-detail h1 { margin: 0; }
+.user-detail__username { color: #6b7280; margin: 4px 0 24px; font-size: 16px; }
+.user-detail__info { display: grid; gap: 8px; margin-bottom: 24px; }
+.user-posts { list-style: none; padding: 0; display: grid; gap: 16px; margin-top: 16px; }
+.user-post { background-color: #f9fafb; padding: 16px; border-radius: 8px; }
+.user-post h4 { margin: 0 0 8px; text-transform: capitalize; }
+.user-post p { margin: 0; font-size: 14px; color: #4b5563; }
+
+/* Темная тема */
+.app--dark .users-input, .app--dark .users-select, .app--dark .user-card, .app--dark .user-detail { background-color: #1a1a1a; color: #fff; border-color: #333; }
+.app--dark .users-btn { background-color: #fff; color: #000; }
+.app--dark .users-btn--back { background-color: #333; color: #fff; }
+.app--dark .user-post { background-color: #222; }
+.app--dark .user-post p { color: #9ca3af; }
+
+@media (max-width: 900px) { .users-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .users-grid { grid-template-columns: 1fr; } }
